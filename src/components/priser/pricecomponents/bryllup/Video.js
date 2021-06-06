@@ -1,9 +1,18 @@
+import {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Video() {
-    return <div className="flim_pack_container">
+
+    useEffect(() => {
+        Aos.init({duration: 1000})
+    },[]);
+
+
+    return <div className="flim_pack_container" data-aos="fade-up">
         <h2>Video</h2>
         <p className="filmpack_blurb"><i>Når festen er over, og brudekjolen ikke passer lenger, så står bilder og video igjen som flotte minner fra ett av livets største høydepunkter. Det er ikke en liten oppgave å fange øyeblikk og blinkskudd gjennom dagen. Alle kan ta gode bilder, men utdanning, opplæring og erfaring sørger for at det blir langt flere blinkskudd :-). Alle som velger videopakke eller heldagsfotografering anbefaler dette videre som en veldig god investering på vei inn i ekteskapet.</i></p>
-        <div className="film_packs">
+        <div className="film_packs" data-aos="fade-up">
         <div className="film_pack1">
         <h3>Heldagspakken</h3>
         <p>

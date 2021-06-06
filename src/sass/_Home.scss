@@ -1,4 +1,5 @@
 .home_container {
+  background-color: $background-dark;
   .home_slider {
     max-height: 100vh;
     max-width: 100%;
@@ -28,26 +29,26 @@
       justify-self: center;
     }
     .home_logo {
-      grid-row-start: 2;
-      grid-row-start: 2;
+      grid-row-start: 20;
+      grid-row-start: 20;
       cursor: pointer;
       .logo_text_lg {
         font-family: Monsieur La Doulaise;
         margin: 0;
         font-size: 52px;
-        color: $text;
+        color: white;
       }
       .logo_text_sm {
         font-family: Cormorant Garamond;
         margin: -7% 0% 0% 0%;
         font-size: 18px;
         letter-spacing: 12px;
-        color: $text;
+        color: white;
       }
     }
     .home_call_to_action {
-      grid-row-start: 17;
-      grid-row-start: 17;
+      grid-row-start: 22;
+      grid-row-start: 22;
       .call_to_action {
         text-decoration: none;
         background-color: $background-dark;
@@ -67,14 +68,14 @@
       }
     }
     .home_nav_links {
-      grid-row-start: 22;
-      grid-row-start: 22;
+      grid-row-start: 25;
+      grid-row-start: 25;
       display: flex;
       width: 100%;
       justify-content: space-around;
       .nav_link {
         text-decoration: none;
-        color: $background-dark;
+        color: white;
         font-family: Open Sans Condensed;
         font-size: 18px;
         font-weight: bold;
@@ -101,13 +102,13 @@
       }
     }
     .home_icons {
-      grid-row-start: 24;
-      grid-row-start: 24;
+      grid-row-start: 27;
+      grid-row-start: 27;
       display: flex;
       width: 100%;
       justify-content: center;
       a {
-        color: $background-dark;
+        color: white;
         transition: 0.5s;
         margin: 0% 4%;
       }
@@ -119,7 +120,7 @@
   //HOME NAVIGATION End
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .home_container {
     //HOME NAVIGATION Start
     .home_navigation {
@@ -132,12 +133,25 @@
         grid-row-start: 3;
         .logo_text_lg {
           font-size: 64px;
+          color: $text;
         }
         .logo_text_sm {
           font-size: 22px;
+          color: $text;
         }
       }
       .home_call_to_action {
+        grid-row-start: 22;
+        grid-row-start: 22;
+        .call_to_action {
+          text-decoration: none;
+          background-color: $background-dark;
+          opacity: 0.8;
+          border-radius: 5px;
+          padding: 0.5rem 1rem;
+          text-transform: uppercase;
+          color: $logo-default;
+        }
         .call_to_action:hover {
           color: $text;
           background-color: $background-2;
@@ -151,6 +165,14 @@
         justify-content: space-around;
         .nav_link {
           font-size: 22px;
+          color: black;
+        }
+      }
+      .home_icons {
+        a {
+          color: $text;
+          transition: 0.5s;
+          margin: 0% 4%;
         }
       }
     }

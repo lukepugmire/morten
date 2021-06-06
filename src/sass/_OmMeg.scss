@@ -24,7 +24,6 @@
       justify-content: center;
       text-align: center;
       h2 {
-        text-decoration: underline 1px;
         text-transform: uppercase;
         letter-spacing: 4px;
         color: $styled-text;
@@ -125,7 +124,6 @@
         justify-content: center;
         text-align: center;
         h2 {
-          text-decoration: underline 1px $styled-text;
           text-transform: uppercase;
           letter-spacing: 4px;
           color: $styled-text;

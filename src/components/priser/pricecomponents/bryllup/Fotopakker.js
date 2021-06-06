@@ -1,10 +1,20 @@
+import {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function Fotopakker() {
+
+    useEffect(() => {
+        Aos.init({duration: 1000})
+    },[]);
+
+
     return <>
-    <h2>Fotopakker</h2>
-            <p className="fotopakker_blurb"><i>Når festen er over, og brudekjolen ikke passer lenger, så står bilder og video igjen som flotte minner fra ett av livets største høydepunkter. Det er ikke en liten oppgave å fange øyeblikk og blinkskudd gjennom dagen. Alle kan ta gode bilder, men utdanning, opplæring og erfaring sørger for at det blir langt flere blinkskudd :-). Alle som velger videopakke eller heldagsfotografering anbefaler dette videre som en veldig god investering på vei inn i ekteskapet.</i></p>
-            <div className="picture_packs">
+    <h2 data-aos="fade-up">Fotopakker</h2>
+            <p className="fotopakker_blurb" data-aos="fade-up"><i>Når festen er over, og brudekjolen ikke passer lenger, så står bilder og video igjen som flotte minner fra ett av livets største høydepunkter. Det er ikke en liten oppgave å fange øyeblikk og blinkskudd gjennom dagen. Alle kan ta gode bilder, men utdanning, opplæring og erfaring sørger for at det blir langt flere blinkskudd :-). Alle som velger videopakke eller heldagsfotografering anbefaler dette videre som en veldig god investering på vei inn i ekteskapet.</i></p>
+            <div className="picture_packs" data-aos="fade-up">
                 <div className="pp picture_pack1">
-                    <h3>Heldagsfotografering</h3>
+                    <h3>Heldags fotografering</h3>
                     <p>Mange av mine kjekkeste oppdrag varer hele bryllupsdagen, 
                         men starter allerede med en kjekk forlovelsesshoot rundt 
                         et år i forveien. Vi får god tid til å planlegge fotograferingen 
@@ -23,7 +33,7 @@ export default function Fotopakker() {
                     </ul>
                 </div>
                 <div className="pp picture_pack2">
-                    <h3>Halvdagsfotografering</h3>
+                    <h3>Halvdags fotografering</h3>
                     <p>Noen ønsker bilder av alt, men det er ikke sikkert dere 
                         trenger det. Det kan være helt fint å få bilder av vielsen, 
                         kanskje et par gruppebilder utenfor kirke/lokalet, noen 
@@ -45,7 +55,7 @@ export default function Fotopakker() {
                         <li>Backup i minst 5 år</li>
                     </ul>
                 </div>
-                <div className="pp picture_pack3">
+                <div className="pp picture_pack3" data-aos="fade-up">
                     <h3>Brudebildene</h3>
                     <p>Ser du for deg knallfine bilder, men ønsker en rimeligere deal? 
                         Null stress! Jeg kan fange mange øyeblikk på kort tid :-). 

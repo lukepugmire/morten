@@ -1,7 +1,17 @@
+import {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function OmContainer5() {
+
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    },[]);
+
+
     return (
         <div class="om_container about_5">
-            <div className="paragraphs">
+            <div className="paragraphs" data-aos="fade-left">
                 <p>Naturlig og avslappet forholder jeg meg til mine talenter, 
 mens det inni meg foregår en rekke avveiinger for hvordan
  jeg kan gjøre akkurat dette bildet bedre.</p>

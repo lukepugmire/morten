@@ -30,9 +30,8 @@
       letter-spacing: 12px;
       text-transform: uppercase;
       font-family: Cormorant + Garamond;
-      text-decoration: underline 1px $nav-links;
-      text-underline-offset: 0.5rem;
       color: black;
+      margin: 12px 0px;
     }
     .fotopakker_blurb {
       width: 80%;
@@ -45,6 +44,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      margin: 12px 0px;
     }
     .tilbehør_img {
       width: 100%;
@@ -60,9 +60,9 @@
       flex-wrap: wrap;
       margin-bottom: 4rem;
       .pp {
-        height: 750px;
+        height: 1000px;
         border-bottom: 1px solid black;
-        width: 100%;
+        width: 75%;
         margin: 2rem;
         p {
           padding: 1rem;
@@ -74,15 +74,14 @@
         h3 {
           padding: 1rem;
           text-transform: uppercase;
-          text-decoration: underline;
-          text-underline-offset: 0.5rem;
           letter-spacing: 2px;
           color: $styled-text;
           font-size: 24px;
+          text-align: center;
         }
       }
       .picture_pack3 {
-        height: 850px;
+        height: 1250px;
       }
     }
     //PICTURE PRICE CONTAINER End
@@ -122,8 +121,6 @@
           h3 {
             padding: 1rem;
             text-transform: uppercase;
-            text-decoration: underline;
-            text-underline-offset: 0.5rem;
             letter-spacing: 2px;
             color: $styled-text;
             font-size: 24px;
@@ -148,8 +145,6 @@
           h3 {
             padding: 1rem;
             text-transform: uppercase;
-            text-decoration: underline;
-            text-underline-offset: 0.5rem;
             letter-spacing: 2px;
             color: $styled-text;
             font-size: 24px;
@@ -172,13 +167,12 @@
         justify-content: center;
         .tilbehør_content {
           width: 300px;
-          height: 150px;
+          height: 180px;
           padding: 1rem;
           margin: 0.5rem;
           background-color: $background-2;
           h4 {
             text-transform: uppercase;
-            text-decoration: underline;
             letter-spacing: 2px;
             color: $styled-text;
             font-size: 18px;
@@ -202,8 +196,6 @@
       letter-spacing: 12px;
       text-transform: uppercase;
       font-family: Cormorant + Garamond;
-      text-decoration: underline 1px;
-      text-underline-offset: 0.5rem;
       color: $text;
     }
     p {
@@ -226,7 +218,6 @@
         justify-content: space-between;
         h4 {
           text-transform: uppercase;
-          text-decoration: underline;
           letter-spacing: 2px;
           color: $styled-text;
           font-size: 16px;
@@ -252,7 +243,6 @@
       letter-spacing: 12px;
       text-transform: uppercase;
       font-family: Cormorant + Garamond;
-      text-decoration: underline 1px;
       color: $text;
       text-align: center;
     }
@@ -275,7 +265,6 @@
         align-items: center;
         h4 {
           text-transform: uppercase;
-          text-decoration: underline;
           letter-spacing: 2px;
           color: $styled-text;
           font-size: 16px;
@@ -304,11 +293,11 @@
         flex-wrap: wrap;
         .pp {
           width: 40%;
-          height: 650px;
+          height: 700px;
         }
         .picture_pack3 {
           width: 1100px;
-          height: 600px;
+          height: 650px;
         }
       }
       //VIDEO PRICE CONTAINER Start
